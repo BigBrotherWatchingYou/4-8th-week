@@ -1,19 +1,19 @@
 class AnonymousSurvey():
     def __init__(self, question):
-        """存储一个问题，并为存储的答案做准备"""
+        #store a question
         self.question = question
         self.responses = []
     
     def show_question(self):
-        """显示调查问卷"""
+        #show the survey
         print(self.question)
     
     def store_response(self, new_response):
-        """存储单份调查问卷"""
+        #show a single survey answer
         self.responses.append(new_response)
     
     def show_results(self):
-        """显示收集到的所有答卷"""
+        #show all the survey answers
         print("Survey results:")
         for response in self.responses:
             print('-' + response)
